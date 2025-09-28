@@ -8,5 +8,10 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
+//Make a superuser admin
+//Run server 
+//python .\manage.py makemigrations
+//python .\manage.py migrate
+//python .\manage.py runserver
 
 {@render children?.()}
