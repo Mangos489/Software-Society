@@ -28,7 +28,11 @@ SECRET_KEY = 'django-insecure-emdj39z535bw6ox@!s=ere&76x@)!4l!8q5(erpby%aw^cfxx#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'backend-ncck.onrender.com', # <--- Add your Render domain
+    '127.0.0.1',
+    'localhost',
+]
 
 
 # Application definition
@@ -54,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'backend.urls'
+ROOT_URLCONF = 'backend.backend.urls' 
 
 TEMPLATES = [
     {
