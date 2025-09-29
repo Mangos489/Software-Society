@@ -1,6 +1,6 @@
-# Backend/software_society/apps.py
 from django.apps import AppConfig
 
-class SoftwareSocietyConfig(AppConfig):
-    name = 'SoftwareSociety'
 
+class SoftwaresocietyConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'SoftwareSociety'
