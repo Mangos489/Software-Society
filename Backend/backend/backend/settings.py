@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'SoftwareSociety.apps.SoftwaresocietyConfig', # <-- Change this line
+    'backend.SoftwareSociety.apps.SoftwaresocietyConfig', # <-- Change this line
 ]
 
 MIDDLEWARE = [
