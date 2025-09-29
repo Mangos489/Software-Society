@@ -9,8 +9,9 @@ services:
     plan: free
     name: backend
     runtime: python
-    buildCommand: './Backend/build.sh'
-    startCommand: 'python -m gunicorn backend.asgi:application -k uvicorn.workers.UvicornWorker'
+    rootDir: backend       # <--- add this
+    buildCommand: 'cd backend && ./build.sh'
+    startCommand: 'cd backend && python -m gunicorn backend.asgi:application -k uvicorn.workers.UvicornWorker'
     envVars:
       - key: DATABASE_URL
         fromDatabase:
