@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-emdj39z535bw6ox@!s=ere&76x@)!4l!8q5(erpby%aw^cfxx#
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'backend-ncck.onrender.com', # <--- Add your Render domain
+    'https://backend-ncck.onrender.com', # <--- Add your Render domain
     '127.0.0.1',
     'localhost',
 ]
@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'backend.backend.urls'
+ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.backend.wsgi.application'
+WSGI_APPLICATION = 'backend.wsgi.application'
 
 
 # Database
