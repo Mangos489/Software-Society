@@ -1,3 +1,4 @@
 [build]
+  base = "Software-Society"
   command = "npm run build"
-  publish = "Software-Society/build"
+  publish = "build"
