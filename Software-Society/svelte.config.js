@@ -11,4 +11,11 @@ const config = {
 	extensions: ['.svelte', '.svx']
 };
 
-export default config;
+export default {
+  kit: {
+    adapter: adapter({
+      // edge: true,   // optional: run SSR at the edge (Deno)
+      // split: true   // optional: split routes into multiple functions (not with edge)
+    })
+  }
+}
